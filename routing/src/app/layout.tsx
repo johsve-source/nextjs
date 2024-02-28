@@ -10,7 +10,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <header style={{ backgroundColor: 'skyblue', padding: '30px' }}>
+          <p>Header</p>
+        </header>
+        {children}
+        <footer style={{ backgroundColor: 'gray', padding: '30px' }}>
+          <p>Footer</p>
+        </footer>
+      </body>
     </html>
   );
 }
